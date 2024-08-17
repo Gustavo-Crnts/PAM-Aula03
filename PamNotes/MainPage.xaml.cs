@@ -25,7 +25,7 @@
 
             Exibir.Text = texto;
             File.WriteAllText(filePath, texto);
-            DisplayAlert("Operação concluída", "Arquivo salvo com sucesso!", "Ok");
+            DisplayAlert("Operação concluída", "Arquivo salvo com sucesso!", "Fechar");
 
         }
 
@@ -41,14 +41,14 @@
             if (File.Exists(filePath))
             {
                 File.Delete(filePath);
-                DisplayAlert("Operação concluída!", "Arquivo foi apagado com sucesso!", "Ok");
+                DisplayAlert("Operação concluída!", "Arquivo foi apagado com sucesso!", "Fechar");
                 EditorSalvar.Text = " ";
             }
 
 
             else
             {
-                DisplayAlert("Alerta", "Arquivo não encontrado", "Ok");
+                DisplayAlert("Alerta", "Arquivo não encontrado", "Fechar");
             }
 
         }
